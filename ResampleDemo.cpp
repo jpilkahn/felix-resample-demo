@@ -1,5 +1,3 @@
-#pragma once
-
 #include <iostream>
 #include <vector>
 
@@ -52,8 +50,7 @@ auto resampleSequence(
     NumberSeq output{};
     output.reserve(outputSize);
 
-    auto inputRef = input;
-    resample(outputSize, inputSize, inputRef, output);
+    resample(outputSize, inputSize, input, output);
 
     return output;
 }
